@@ -19,5 +19,5 @@ Here is my idea of CSS.
 <img src="./images/screen2.png">
 
 
-Well the picture i cant get to pop up in HTML or CSS works in my freaking README. cool. 
+The picture works on readme.
 <img src="./images/hopethisworks.jpg">
