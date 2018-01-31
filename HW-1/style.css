@@ -1,18 +1,42 @@
-<!DOCTYPE CSS>
-body,html{
-  height: 100%;
-  background-color: black;
-}
 body {
-  background-color: black;
+  height: 100%;
+  background-color: #efc2c2;
+  color:black;
+  padding: 0;
+  margin: 0;
+  font-family: impact,sans-serif;
+  width: 90%, auto
+  margin: 0 auto;
+}
+
+/* For mobile phones: */
+[class*="col"] {
+  width: 100%
+}
+
+@media (min-width: 768px){
+  /*for desktop*/
+  .col-1 {width: 8.33%}
+  .col-2 {width: 16.66%}
+  .col-3 {width: 25%}
+  .col-4 {width: 33.33%}
+  .col-5 {width: 41.66%}
+  .col-6 {width: 50%}
+  .col-7 {width: 58.33%}
+  .col-8 {width: 66.66%}
+  .col-9 {width: 75%}
+  .col-10 {width: 83.33%}
+  .col-11 {width: 91.66%}
+  .col-12 {width:100%}
+
 }
 
 .hero-image {
-  backround-image: url("/images/mom_boys.jpg");
-  height:50%
+  background-image: url("images/hopethisworks.jpg");
+  height:100vh
   background-position: center;
   background-repeat: no-repeat;
-  background size: cover;
+  background-size: cover;
   position: relative;
 }
 
@@ -23,4 +47,29 @@ body {
   left: 50%;
   transfrom: translate (-50%, -50%);
   color: white;
+}
+
+.c1, .c2, .c3, .description-container, .flex-item{
+  width: 31.3%
+  float:left;
+  margin: 1%;
+  flex: auto;
+  flex-wrap: wrap;
+  background-color: gray;
+
+display: flex;
+
+
+}
+
+.c1{
+  order: 3;
+}
+
+.c2{
+  order:1;
+}
+
+.c3 {
+  order: 2%
 }
