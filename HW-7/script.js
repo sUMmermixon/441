@@ -11,13 +11,10 @@ let elChild3 = document.createElement("p");
 let cont1 = document.querySelector(".firstContainer");
 
 /* option1 */
-let swhCont1 = document.querySelector(".C1");
+let paCont1 = document.querySelector(".C1");
 
 /* option 2 */
-let skhCont1 = document.querySelector(".C2");
-
-/* option 3*/
-let bkhCont1 = document.querySelector(".C3");
+let npCont1 = document.querySelector(".C2");
 
 /* buttons*/
 let bt1 = document.querySelector("#H1");
@@ -29,17 +26,17 @@ let formEl = document.querySelector(".form1");
 let storEl = document.querySelector(".storageDiv");
 
 
-bt1.addEventListener("click", showHideTextswh);
-bt2.addEventListener("click", showHideTextswh);
+bt1.addEventListener("click", showHideTextPA);
+bt2.addEventListener("click", showHideTextNoPA);
 
-/* text iskhut*/
+/* text input*/
 function grabText() {
   let textIn;
   textIn = document.querySelector("#textIn1").value;
   if( textIn.length < 1){ alert("Write your name!"); return }
 
 /* adding text */
-  let textToAdd = document.createTextde("Hello "+textIn+"!");
+  let textToAdd = document.createTextNode("Hello "+textIn+"!");
   let newP = document.createElement("P");
   newP.appendChild(textToAdd);
 
@@ -59,14 +56,14 @@ document.querySelector(".form1").addEventListener('keypress', (event) => {
 
 document.querySelector("#runButton").addEventListener('click', grabText);
 
-/*straw house */
-function showHideTextswh(){
-  if (swhCont1.hidden) {
-    swhCont1.hidden=false;
+/*stick house option page*/
+function showHideTextPA(){
+  if (paCont1.hidden) {
+    paCont1.hidden=false;
     formEl.hidden=true;
     storEl.hidden=true;
     cont1.hidden=true;
-    skhCont1.hidden=true;
+    npCont1.hidden=true;
     bt2.hidden=true;
     bt1.hidden=true;
     bt3.hidden=true;
@@ -81,11 +78,11 @@ function showHideTextswh(){
     setTimeout(congratsAlert, 3000);
 
   } else {
-    swhCont1.hidden=true;
+    paCont1.hidden=true;
     formEl.hidden=false;
     storEl.hidden=false;
     cont1.hidden=false;
-    skhCont.hidden=false;
+    npCont.hidden=false;
     bt2.hidden=false;
     bt1.hidden=false;
     bt3.hidden=false;
@@ -94,13 +91,13 @@ function showHideTextswh(){
 }
 
 /* stick house */
-function showHideTextswh() {
-  if (skhCont1.hidden) {
-  skhCont1.hidden=false;
+function showHideTextNoPA() {
+  if (npCont1.hidden) {
+  npCont1.hidden=false;
   formEl.hidden=true;
   storEl.hidden=true;
   cont1.hidden=true;
-  swhCont1.hidden=true;
+  paCont1.hidden=true;
   bt1.hidden=true;
   bt2.hidden=true;
   bt3.hidden=true;
@@ -114,11 +111,11 @@ function showHideTextswh() {
   setTimeout(congratsAlert, 3000);
 
 } else {
-  skhCont1.hidden=true;
+  npCont1.hidden=true;
   formEl.hidden=false;
   storEl.hidden=false;
   cont1.hidden=false;
-  swhCont1.hidden=false;
+  paCont1.hidden=false;
   bt1.hidden=false;
   bt2.hidden=false;
   bt3.hidden=false;
@@ -126,9 +123,7 @@ function showHideTextswh() {
 }
 }
 
-
-
-/* children */
+/*children */
 el.appendChild(elChild);
 el.appendChild(elChild2);
 el.appendChild(elChild3);
