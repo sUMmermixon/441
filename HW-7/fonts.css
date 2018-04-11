@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'impact';
+  src:url('.fonts/impact-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src:url('./fonts/arial-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arial';
+  src:url('./fonts/arial-Bold.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

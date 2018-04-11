@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Homework 7">
+    <meta name="author" content="Summer Mixon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./fonts.css">
+
+    <!-- Title -->
+    <title>Choose Your Own Adventure</title>
+
+    <!-- Background-->
+    <style>body{background-color: #7EB1CC;}</style>
+  </head>
+  <body>
+
+    <!--Name Button-->
+    <form class="form1" action="#" method="post">
+      <input type="text" name="TextInput" placeholder="name here" id="textIn1">
+        <button type="button" name="button" id="runButton" onclick="this.disabled=true;">Submit</button>
+    </form>
+
+    <!--Adding a place to store said name-->
+    <div class="storageDiv" id="storageDiv" style="min-height:50px;"></div>
+
+    <!--1st container-->
+<div class="firstContainer">
+  <h1>The Three Little Pigs - Choose Your Own Adventure!</h1>
+  <p>Once upon a time there were three little pigs. It was time for them to build their houses.
+</br>Which House would you like to build?</p>
+<center><img src="./images/3-little-pigs-2.png" alt="straw piggie" width="960" height="914"></center>
+</div>
+
+
+    <!--buttons-->
+<div class="strawhouse">
+  <button type="button" name="strawhouse" id="H1">Straw House</button>
+</div>
+<div class="stickhouse">
+  <button type="button" name="stickhouse" id="H2">Stick House</button>
+</div>
+<div class="brickhouse">
+  <button type="button" name="brickhouse" id="H3">Brick House</button>
+</div>
+
+    <!--straw house-->
+<div class="C1" hidden="true" onclick="bgChange()">
+  <h1>Straw House</h1>
+<p>You picked to build your house with Straw! Oh no! Here comes the Big Bad Wolf to blow your house down!
+</br>
+</br>
+Your house did not survive. Pick a different house! (refresh page)
+</p>
+  <img src="./images/straw.png" alt="straw piggie" width="501" height="668">
+</div>
+
+
+    <!--stick house-->
+<div class="C2" hidden="true">
+  <h1>Stick House</h1>
+    <p>You picked to build your house with Stick! Uh OH! Here comes the big bad wolf to blow your house down!
+    </br>
+    </br>
+    Your house did not survive. Pick a differnt house! (refresh page) </p>
+    <img src="./images/wood.png" alt="wood piggie" width="501" height="668">
+  </div>
+
+
+
+  <!--brick house-->
+<div class="C3" hidden="true" onclick="bgChange()">
+<h1>Straw House</h1>
+<p>You picked to build your house with Brick! Oh no! Here comes the Big Bad Wolf to blow your house down!
+</br>
+</br>
+But your house survived! The Three Little Pigs lived Happily Ever After. (refresh page)
+</p>
+<img src="./images/brickpig.dms" alt="brick piggie" width="501" height="668">
+</div>
+
+
+    <!--Linking the Javascript file to HTML-->
+    <script src="./script.js"></script>
+    </body>
+    </html>
