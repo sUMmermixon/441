@@ -1,0 +1,33 @@
+body {
+    font-family:'impact';
+    background-color: #BFC9CF;
+    Background-image: url("https://goo.gl/images/6b4kvk");
+
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+#page-title {
+    font-size: 5em;
+    color: #005E70;
+    border-style: double;
+    border-color: #B21212;
+}
+
+#page-title, #form-inputs, #submit-artist-song {
+    text-align: center;
+}
+
+#lyrics-output {
+    margin: 15px 0 0 0;
+    font-size: 1em;
+    font-family: 'arial';
+    color: #B21212;
+    border-style: double;
+    border-color: #FFFFFA;
+}
